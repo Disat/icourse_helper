@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "icourese_help",
+    "version": "0.1",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "video_helper.js",
+                "inject.js"
+            ],
+            "matches": [
+                "*://*.icourses.cn/*"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.icourses.cn/*"
+            ],
+            "js": [
+                "inject.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
