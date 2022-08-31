@@ -3,3 +3,4 @@
 > https://www.icourses.cn/home/
 使用场景：
 在课程播放界面，可以拖动播放器并且能改变播放器宽高。
+![instruction]().
